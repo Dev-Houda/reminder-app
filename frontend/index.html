@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <hr width="75%" height="10px">
+    <div class="container">
+
+        <div class="sidebar">
+            <h3>Menü</h3>
+            <a href="home.html">Home</a>
+            <a href="index.html">Menüpunkt 1</a>
+        </div>
+        <div class="main">
+            <h1>Erinnerung hinzufügen</h1>
+            <form id="reminderForm">
+                <div>
+                    <input type="hidden" id="reminderId" />
+                    <label>Datum:<br /><input type="date" id="date" required /></label><br /><br />
+                    <label>Bezeichnung:<br /><input type="text" id="title" required /></label><br /><br />
+                    <label>E-Mail:<br /><input type="email" id="email" required /></label><br /><br />
+                    <label>Erinnerung vor:<br />
+                        <select id="reminderBefore" required>
+                            <option value="">Bitte auswählen</option>
+                            <option value="1">1 Tag</option>
+                            <option value="2">2 Tage</option>
+                            <option value="4">4 Tage</option>
+                            <option value="7">1 Woche</option>
+                            <option value="14">2 Wochen</option>
+                        </select>
+                    </label><br /><br />
+                </div>
+                <button type="submit">Speichern</button>
+            </form>
+
+            <h2>Alle Erinnerungen</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Bezeichnung</th>
+                        <th>E-Mail</th>
+                        <th>Erinnerung vor</th>
+                        <th>Aktion</th>
+                    </tr>
+                </thead>
+                <tbody id="reminderList"></tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
