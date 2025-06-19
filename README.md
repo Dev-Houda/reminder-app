@@ -1,20 +1,20 @@
-# 🗓️ Erinnerungskalender (Reminder App)
+# Erinnerungskalender (Reminder App)
 
 A simple web application where users can add important dates and receive reminder emails before the event.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📅 Add reminders with title, date, and lead time (1–14 days)
-- 📨 Automatic email reminders
-- ✏️ Edit or delete reminders via the UI
-- 🌐 Simple frontend integrated with Express backend
-- 🎨 Design based on provided mockups
+-  Add reminders with title, date, and lead time (1–14 days)
+-  Automatic email reminders
+-  Edit or delete reminders via the UI
+-  Simple frontend integrated with Express backend
+-  Design based on provided mockups
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, Nodemailer
 - **Frontend**: HTML, CSS, JavaScript
@@ -23,7 +23,7 @@ A simple web application where users can add important dates and receive reminde
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 reminder-app/
 ├── backend/ → Express server, routes, models, controllers
@@ -32,7 +32,7 @@ reminder-app/
 ├── .env.example → Environment variable template
 └── README.md
 
-## 🧪 How to Run
+## How to Run
 
 ### 1. Clone and install backend
 
